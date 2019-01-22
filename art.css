@@ -1,0 +1,50 @@
+.header {
+    color: white;
+    background-color: rgb(0,0,0,.6);
+    background-blend-mode: multiply;
+    font-family: 'Sriracha', cursive;
+    height: 60px;
+}
+.header::after {
+    content:"";
+    display: table;
+    clear: both;
+}
+.ul1 a {
+    color: white;
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+.header h1 a {
+    color: white;
+    float: left;
+    margin: 0 70px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin: 0 80px;
+    margin-left: 30px;
+    padding-top: 16px;
+}
+html {
+    background: rgb(0,0,0,.5);
+}
+.ul1 a {
+    transition: 0.5s;
+}
+.ul1:hover a {
+    transform: scale(1.5);
+    opacity: 1;
+    filter: blur(2px);
+}
+.ul1 a:hover {
+    transform: scale(2);
+    opacity: 1;
+    filter: blur(0);
+}

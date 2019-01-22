@@ -1,0 +1,68 @@
+html {
+    background-color: rgb(0,0,0,.5);
+    background-size: cover;
+}
+.o {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.o {
+    display: inline-block;
+    vertical-align: middle;
+    width: 16px;
+    height: 16px;
+    border-radius:16px;
+    background-color: white;
+}
+.o::before,
+.o::after {
+    position: absolute;
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 16px;
+    border-radius: 16px;
+    background-color: inherit;
+}
+.o::before {
+    transform: translateX(-120%);
+    transform-origin: 32px 50%;
+    animation: wow1 1s infinite ease;
+}
+.o::after {
+    transform: translateX(120%);
+    transform-origin: -16px 50%;
+    animation: wow2 1s infinite ease;
+}
+@keyframes wow1 {
+    0%{
+        transform: translateX(-120%) rotate(0deg);
+    }
+    50%{ 
+        transform: translateX(-120%) rotate(180eg);
+    }
+    100%{
+        transform: translateX(-120%) rotate(360deg);
+    }
+}
+@keyframes wow2 {
+    0%{
+        transform: translateX(120%) rotate(0deg);
+    }
+    50%{ 
+        transform: translateX(120%) rotate(180eg);
+    }
+    100%{
+        transform: translateX(120%) rotate(360deg);
+    }
+}
+.quote {
+    font-family: 'Staatliches', cursive;
+    position: absolute;
+    vertical-align: middle;
+    color: white;
+    top: 55%;
+    left: 47.6%;
+}
